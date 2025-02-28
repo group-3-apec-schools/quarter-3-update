@@ -1,0 +1,198 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #d0711e;
+  background-image: linear-gradient(to right, #ab5c17, #d0711e, #ab5c17);
+  background-image: url(resources/tigerstripesloop2.png);
+  background-repeat: repeat-y;
+  background-size: 300%;
+  border-color: rgba(000,000,000,0)
+}
+
+.hrborder11{
+  background-image: linear-gradient(to bottom, rgba(000,000,000,1), rgba(000,000,000,0) );
+  border-width: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  justify-content: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #c0c0c0;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #FFFFFF;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#main2 {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#tigerimagelul{
+  transition: margin-left .5s;
+  padding: 16px
+}
+
+.tigeroverlay:hover {
+  color: #000000;
+  filter: brightness(0.5);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.hr11 {
+  height: 1px;
+  margin: 15px 0;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  border: 0;
+}
+.hr11:after {
+  display: block;
+  content: '';
+  height: 30px;
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(center top, farthest-side, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-radial-gradient(center top, farthest-side, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-radial-gradient(center top, farthest-side, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(farthest-side at center top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.rectangle{
+  height: 100px;
+  width: auto;
+  background-color: #000;
+}
+
+.div1{
+  height: 250px;
+  width: auto;
+}
+
+#onloadscriptsid{
+  transition: margin-left 0.5s;
+}
+
+.introvid{
+  background-image: url(resources/tigerstripes.png);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 150px;
+  align-items: flex-start;
+}
+.card {
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.card-header img {
+  width: 100%;
+  height: auto;
+}
+.card-header .title {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 0 15px;
+  text-align: left;
+  transition: max-height 0.3s ease;
+  position: absolute; /* Prevent height changes from affecting siblings */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card-content p {
+  margin: 10px 0;
+}
+.card-footer {
+  text-align: right;
+  padding: 10px;
+  position: relative;
+}
+.card-footer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+.card-footer button:hover {
+  color: #555;
+}
+.card.expanded .card-content {
+  max-height: 150px; /* Adjust to fit content */
+}
+
+.productsdiv{
+  background-image: url(resources/tigerstripes.png);
+}
